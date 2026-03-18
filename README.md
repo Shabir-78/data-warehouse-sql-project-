@@ -13,6 +13,12 @@
 
 The project follows **Medallion Architecture** with three distinct layers:
 
+- **Bronze Layer** — Raw data ingested as-is from source systems (ERP & CRM)
+- **Silver Layer** — Cleansed, standardized, and normalized data
+- **Gold Layer** — Business-ready star schema optimized for analytics
+
+## 🔄 Data Flow & Layer Process
+
 ![Layer Process](docs/layer_process.png)
 
 ![Data Flow](docs/data_flow.png)
@@ -49,10 +55,7 @@ This project simulates a real-world data warehouse workflow, covering:
 > the same logical layer separation.
 
 
-
----
-
-## 🚀 Build Progress
+## 🚀 Layer Breakdown
 
 ### 🥉 Bronze Layer — ✅ Complete
 
@@ -74,8 +77,15 @@ Cleansed and standardized the raw bronze data, making it reliable and consistent
 - Removed duplicate records 
 - Loaded clean results into the silver layer tables
 
+### 🥇 Gold — Star Schema & Analytics ✅
 
-### 🥇 Gold Layer — 🔄 In Progress
+Business-ready data modeled into a star schema for reporting and analysis.
 
-Building the business-ready star schema for analytics and reporting.
+![Data Model](docs/data_model.png)
+
+- Explore business objects | Understand how silver tables connect across CRM and ERP |
+- Build dimensions | `dim_customers` (CRM + ERP joined) · `dim_products` (CRM + ERP joined) |
+- Build fact table | `fact_sales` — transactional records with all foreign keys |
+- Validate integration | Check row counts, join integrity, no orphaned keys | Data model diagram
+
 
