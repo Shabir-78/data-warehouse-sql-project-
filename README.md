@@ -87,8 +87,8 @@ Business-ready data modeled into a star schema for reporting and analysis.
 
 ---
 
-📂 Repository Structure
-'''
+## 📂 Repository Structure
+```
 data-warehouse-sql-project/
 │
 ├── datasets/
@@ -105,7 +105,7 @@ data-warehouse-sql-project/
 │   ├── layer_process.png              # Step-by-step layer process diagram
 │   └── naming_conventions.pdf        # Naming standards for tables and columns
 │
-├── scripts/                           # SQL scripts for ETL and transformations
+├── scripts/
 │   ├── bronze/                        # Scripts for extracting and loading raw data
 │   ├── silver/                        # Scripts for cleaning and transforming data
 │   └── gold/                          # Scripts for creating analytical models
@@ -116,5 +116,5 @@ data-warehouse-sql-project/
 │
 ├── LICENSE
 └── README.md
-'''
+```
 ---
